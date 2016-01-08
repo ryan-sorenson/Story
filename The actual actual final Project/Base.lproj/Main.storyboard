@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--First View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="FirstViewController" customModule="The_actual_actual_final_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,227 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Choose your own High School Story" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OKj-eH-CM2">
+                                <rect key="frame" x="126" y="71" width="348" height="193"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MjB-b4-yWV">
+                                <rect key="frame" x="254" y="351" width="93" height="87"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Play!">
+                                    <color key="titleColor" red="0.087664086370000005" green="1" blue="0.94967329450000004" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Qb2-6J-xvb" kind="show" id="0Jr-kJ-lI6"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OKj-eH-CM2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="664-k3-htg"/>
+                            <constraint firstItem="MjB-b4-yWV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XKe-af-fLg"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Bj6-eW-6NV"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1113" y="-403"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="UpD-MM-Ksq">
+            <objects>
+                <viewController id="Qb2-6J-xvb" customClass="SecondViewController" customModule="The_actual_actual_final_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QKj-cf-ZI1"/>
+                        <viewControllerLayoutGuide type="bottom" id="VSD-V5-8qi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="g2l-jg-yAT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Its your first math test of the year, but the brand new Call of Duty game came out. Do you study?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vuu-gq-2LR">
+                                <rect key="frame" x="96" y="72" width="213" height="174"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Did Study or Did not Study?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TAz-sZ-L7P">
+                                <rect key="frame" x="200" y="259" width="200" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K4C-gn-chg">
+                                <rect key="frame" x="257" y="310" width="86" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onButtonTapped:" destination="Qb2-6J-xvb" eventType="touchUpInside" id="WQF-U6-j9n"/>
+                                    <segue destination="7qW-jy-S4H" kind="show" id="uLb-In-01w"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="TAz-sZ-L7P" firstAttribute="centerX" secondItem="g2l-jg-yAT" secondAttribute="centerX" id="FPx-zF-IVn"/>
+                            <constraint firstItem="K4C-gn-chg" firstAttribute="centerX" secondItem="g2l-jg-yAT" secondAttribute="centerX" id="OUy-7V-tXS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="firstTextField" destination="TAz-sZ-L7P" id="iuv-GF-8SQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SrA-bq-l1B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1775" y="-403"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="0ke-r1-IzN">
+            <objects>
+                <viewController id="7qW-jy-S4H" customClass="ThirdViewController" customModule="The_actual_actual_final_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0s6-sc-Zhf"/>
+                        <viewControllerLayoutGuide type="bottom" id="kdy-KN-jXz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vn3-cf-gCs">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M81-F8-j98">
+                                <rect key="frame" x="79" y="72" width="247" height="172"/>
+                                <string key="text">You've got a group project with a bunch of your friends. Its the night of and you did none of your part of the project. What do you do? Do you do it?</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Did or Did Not?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="418-Vb-LaD">
+                                <rect key="frame" x="200" y="252" width="200" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lh3-UT-mBb">
+                                <rect key="frame" x="253" y="309" width="94" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" red="0.023529414089999999" green="0.0039215688589999999" blue="0.023529414089999999" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onButtonTapped2:" destination="7qW-jy-S4H" eventType="touchUpInside" id="S4i-MP-h4v"/>
+                                    <segue destination="IeU-k6-Uue" kind="show" id="AHK-E6-J02"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Lh3-UT-mBb" firstAttribute="centerX" secondItem="vn3-cf-gCs" secondAttribute="centerX" constant="-5" id="ZaB-vY-O4a"/>
+                            <constraint firstItem="418-Vb-LaD" firstAttribute="centerX" secondItem="vn3-cf-gCs" secondAttribute="centerX" constant="-5" id="cW5-rV-HTH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textField2" destination="418-Vb-LaD" id="TTa-tz-Twz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HoM-gQ-8VU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2429" y="-403"/>
+        </scene>
+        <!--Fourth View Controller-->
+        <scene sceneID="n7L-87-tVR">
+            <objects>
+                <viewController id="IeU-k6-Uue" customClass="FourthViewController" customModule="The_actual_actual_final_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="e0r-F0-eLf"/>
+                        <viewControllerLayoutGuide type="bottom" id="4wO-q3-MSi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YoI-AL-Mdu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Study or hang with friends Friends?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ql2-sP-nCH">
+                                <rect key="frame" x="160" y="243" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fo-4n-Thd">
+                                <rect key="frame" x="260" y="303" width="80" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onButtonTapped3:" destination="IeU-k6-Uue" eventType="touchUpInside" id="xDJ-ng-9rS"/>
+                                    <segue destination="Wte-DR-kdE" kind="show" id="lD5-5f-wL3"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Its finals Week! Your schedual is booked with finals every day of the week. Do you decide to study or hang with your friends?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EfU-qQ-bff">
+                                <rect key="frame" x="81" y="61" width="236" height="174"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Ql2-sP-nCH" firstAttribute="centerX" secondItem="YoI-AL-Mdu" secondAttribute="centerX" id="07y-Mg-swR"/>
+                            <constraint firstItem="4fo-4n-Thd" firstAttribute="centerX" secondItem="YoI-AL-Mdu" secondAttribute="centerX" id="kP9-qN-nUe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textField3" destination="Ql2-sP-nCH" id="GX4-jL-mwm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vpd-rX-gGO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3067" y="-403"/>
+        </scene>
+        <!--Fifth View Controller-->
+        <scene sceneID="B8O-Pa-7yZ">
+            <objects>
+                <viewController id="Wte-DR-kdE" customClass="FifthViewController" customModule="The_actual_actual_final_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BGK-OH-5X2"/>
+                        <viewControllerLayoutGuide type="bottom" id="tbG-Pf-BcY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jZQ-oW-Fcd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="usp-zx-eH6">
+                                <rect key="frame" x="132" y="72" width="318" height="198"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="succes" translatesAutoresizingMaskIntoConstraints="NO" id="hGl-kY-ZzJ">
+                                <rect key="frame" x="198" y="289" width="204" height="115"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gyy-vb-DFa">
+                                <rect key="frame" x="278" y="481" width="44" height="30"/>
+                                <state key="normal" title="Reset!"/>
+                                <connections>
+                                    <action selector="resetButton:" destination="Wte-DR-kdE" eventType="touchUpInside" id="Jw8-bM-Jg6"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="ftw-PY-hzm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="usp-zx-eH6" firstAttribute="centerX" secondItem="jZQ-oW-Fcd" secondAttribute="centerX" id="4Ye-gg-5sY"/>
+                            <constraint firstItem="hGl-kY-ZzJ" firstAttribute="centerX" secondItem="jZQ-oW-Fcd" secondAttribute="centerX" id="8L1-ZC-Dzd"/>
+                            <constraint firstItem="gyy-vb-DFa" firstAttribute="centerX" secondItem="jZQ-oW-Fcd" secondAttribute="centerX" id="GAe-ay-wzY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="storyText" destination="usp-zx-eH6" id="vmC-8u-Cfh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z0j-8e-ne1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3780" y="-408"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="succes" width="284" height="177"/>
+    </resources>
 </document>

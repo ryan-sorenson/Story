@@ -14,6 +14,12 @@
 		3F7089DB1C1E569100EA0FAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F7089D91C1E569100EA0FAE /* LaunchScreen.storyboard */; };
 		3F7089E61C1E569100EA0FAE /* The_actual_actual_final_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7089E51C1E569100EA0FAE /* The_actual_actual_final_ProjectTests.swift */; };
 		3F7089F11C1E569100EA0FAE /* The_actual_actual_final_ProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7089F01C1E569100EA0FAE /* The_actual_actual_final_ProjectUITests.swift */; };
+		3F7089FF1C1E571600EA0FAE /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7089FE1C1E571600EA0FAE /* Story.swift */; };
+		3F708A011C1E576500EA0FAE /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F708A001C1E576500EA0FAE /* FirstViewController.swift */; };
+		3F708A031C1E577500EA0FAE /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F708A021C1E577500EA0FAE /* SecondViewController.swift */; };
+		3F708A051C1E578000EA0FAE /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F708A041C1E578000EA0FAE /* ThirdViewController.swift */; };
+		3F708A071C1E578C00EA0FAE /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F708A061C1E578C00EA0FAE /* FourthViewController.swift */; };
+		3F708A091C1E579B00EA0FAE /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F708A081C1E579B00EA0FAE /* FifthViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		3F7089EC1C1E569100EA0FAE /* The actual actual final ProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The actual actual final ProjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F7089F01C1E569100EA0FAE /* The_actual_actual_final_ProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_actual_actual_final_ProjectUITests.swift; sourceTree = "<group>"; };
 		3F7089F21C1E569100EA0FAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F7089FE1C1E571600EA0FAE /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		3F708A001C1E576500EA0FAE /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		3F708A021C1E577500EA0FAE /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		3F708A041C1E578000EA0FAE /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		3F708A061C1E578C00EA0FAE /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		3F708A081C1E579B00EA0FAE /* FifthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +112,12 @@
 				3F7089D01C1E569100EA0FAE /* AppDelegate.swift */,
 				3F7089D21C1E569100EA0FAE /* ViewController.swift */,
 				3F7089D41C1E569100EA0FAE /* Main.storyboard */,
+				3F708A001C1E576500EA0FAE /* FirstViewController.swift */,
+				3F708A021C1E577500EA0FAE /* SecondViewController.swift */,
+				3F708A041C1E578000EA0FAE /* ThirdViewController.swift */,
+				3F708A061C1E578C00EA0FAE /* FourthViewController.swift */,
+				3F708A081C1E579B00EA0FAE /* FifthViewController.swift */,
+				3F7089FE1C1E571600EA0FAE /* Story.swift */,
 				3F7089D71C1E569100EA0FAE /* Assets.xcassets */,
 				3F7089D91C1E569100EA0FAE /* LaunchScreen.storyboard */,
 				3F7089DC1C1E569100EA0FAE /* Info.plist */,
@@ -261,6 +279,12 @@
 			files = (
 				3F7089D31C1E569100EA0FAE /* ViewController.swift in Sources */,
 				3F7089D11C1E569100EA0FAE /* AppDelegate.swift in Sources */,
+				3F7089FF1C1E571600EA0FAE /* Story.swift in Sources */,
+				3F708A071C1E578C00EA0FAE /* FourthViewController.swift in Sources */,
+				3F708A091C1E579B00EA0FAE /* FifthViewController.swift in Sources */,
+				3F708A031C1E577500EA0FAE /* SecondViewController.swift in Sources */,
+				3F708A051C1E578000EA0FAE /* ThirdViewController.swift in Sources */,
+				3F708A011C1E576500EA0FAE /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
